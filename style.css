@@ -1,21 +1,18 @@
 /* Header content */
 
-    
+ 
 
     .box
     {
         width: 940px;
-        position: relative;
         margin: 0 auto;
     }
 
     header {
 
         background-color: rgb(12, 13, 61);
-
-        padding: 65px 0;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+        margin-bottom: 4%;
+        padding: 4.3%;
         }
 
     nav li
@@ -23,36 +20,58 @@
         display: inline;
     }
     .alura-logo { 
-        position:fixed; 
-        top:0; 
-        right:0; 
-        width: 12%;
+        position:absolute;
+        top: 0%;
+        left: 90%;
+        width: 10%;
         }
-
-    .title
+    
+        .title
     {
         position: relative;
         color: white;
-        left: 30%;
-        top: 4.5%;
-        font-size: 300%;
+        margin-left: 20%;
+        top: -2px;
+        font-size: 32px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style:italic
         
+    }
+
+    .title:hover span
+
+    {
+        display:none;
+        transition: 2s;
         
+    }
+
+    .title:hover:before 
+    {
+        transition: transform 0.2;
+        content: "ጽሑፍ ኢንክሪፕተር";
+        font-size: 100%;
         
+
     }
 
     .flags
     {
+        
         padding: 0 15px;
+        top: 5%;
+        
+        border-radius: 40%;
     }
 
     .japan-flag
     { 
         position: absolute;
-        top: 50px;
-        right: 180px;
-        width: 60px;
-        border-radius:20px;
+        width: 4%;
+        margin: 0 2%;
+        border-radius: 20%;
+        left: 81%;
+        top: 8.4%;   
         transition: 0.2s;
     }
 
@@ -60,68 +79,221 @@
     {
         scale: 110%;
         transition: 0.2s;
-        content: counter("Hola");
+        border: 1px solid white;
+        
+    }
+
+    .japan-flag:active
+    {
+        scale: 110%;
+        transition: 0.2s;
+        border: 1px solid white;  
+        opacity: 70%;
+        transition: 0.2s;
     }
 
     .usa-flag
     {
         position: absolute;
-        top: 50px;
-        right: 260px;
-        width: 60px;
-        height: 40px;
-        border-radius:20px;
+        width: 4%;
+        margin: 0 2%;
+        border-radius: 20%;
+        left: 75%;
+        top: 8.4%;
         transition: 0.2s;
+    }
 
+    .usa-flag:active
+    {
+        scale: 110%;
+        transition: 0.2s;
+        border: 1px solid white;  
+        opacity: 70%;
+        transition: 0.2s;
     }
 
     .usa-flag:hover
     {
         scale: 110%;
         transition: 0.2s;
+        border: 1px solid white
     }
 
 
     .argentina-flag
     {
         position: absolute;
-        top: 50px;
-        right: 340px;
-        width: 60px;
-        border-radius:20px;
+        width: 4%;
+        margin: 0 2%;
+        border-radius: 20%;
+        left: 69%;
+        top: 8.4%;
         transition: 0.2s;
-        height: 40px;
-
     }
 
     .argentina-flag:hover
     {
         scale: 110%;
         transition: 0.2s;
+        border: 1px solid white
+    }
+    
+    .argentina-flag:active
+    {
+        scale: 110%;
+        transition: 0.2s;
+        border: 1px solid white;  
+        opacity: 70%;
+        transition: 0.2s;
+    }
+    
+    
+    @media only screen and (min-width: 641px) and (max-width: 1200px)
+    {
+        .title
+        {
+            top: 2%;
+            font-size: 120%;   
+            right: 20%;
+        }
+
+       .japan-flag
+       {
+            top: 4%;
+            left: 80%;
+            width: 4%;
+       }
+
+       .usa-flag
+       {
+            top: 4%;
+            left: 75%;
+            width: 4%;
+       }
+
+       .argentina-flag
+       {
+            top: 4%;
+            left: 70%;
+            width: 4%;
+       }
+    }
+    
+    @media only screen and (min-width: 400px) and (max-width: 640px) 
+    {
+        .title
+        {
+            top: 2%;
+            font-size: 120%;   
+            right: 20%;
+        }
+
+       .japan-flag
+       {
+            top: 4%;
+            left: 80%;
+            width: 4%;
+       }
+
+       .usa-flag
+       {
+            top: 4%;
+            left: 75%;
+            width: 4%;
+       }
+
+       .argentina-flag
+       {
+            top: 4%;
+            left: 70%;
+            width: 4%;
+       }
+    }
+
+    @media only screen and (min-width: 200px) and (max-width: 399px) 
+    {
+        .title
+        {
+            top: 2%;
+            font-size: 120%;   
+            right: 20%;
+        }
+
+       .japan-flag
+       {
+            top: 1%;
+            left: 80%;
+            width: 4%;
+       }
+
+       .usa-flag
+       {
+            top: 3%;
+            left: 80%;
+            width: 4%;
+       }
+
+       .argentina-flag
+       {
+            top: 5%;
+            left: 80%;
+            width: 4%;
+       }
     }
 
     
-    @media screen and (max-width:480px)
-    {
-        .title 
-        {
-            text-align: center;
-            width: auto;
-        }
-
-        .flags
-        {
-            display: block;
-        }
-    }
-
-
-
 /* Main content */
 
 
+body
+{
+    background-color: #2d3939;
+
+}
+
+#text-user
+{
+    margin-left: 5%;
+    background-color: antiquewhite;
+    padding: 2% 10%;
+    font-size: 20px;
+    border-radius: 5%;
+    border: 5px solid rgb(40, 17, 23);
+    resize: none;
+    color: black
+   
+}
 
 
+#texto-user:placeholder
+{
+    color: #f90d83;
+    
+}
 
+.hacking
+{
+    float: right;
+    position: relative;
+    margin: 0 5%;
+ 
+
+}
+
+.text-result
+{
+    position: absolute;
+    top: 20%;
+    margin: 0 5%;
+}
 
 /* Footer content */
+
+
+footer
+{
+    background-color: rgb(12, 13, 61);
+       height: 20%;
+    margin-bottom: 2%;
+}
+

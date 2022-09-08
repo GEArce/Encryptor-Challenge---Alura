@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Buhid&display=swap" rel="stylesheet">
     <title>Encryptor</title>
 
 </head>
@@ -17,10 +20,10 @@
             <label></label>
                 <h1><img class = "alura-logo" src ="images/logo.png"></h1>
                 <ul class = "flags">
-                    <li class = "title"> Encriptador de Téxto </li>
-                    <li> <img class = argentina-flag src = "images/Flag_of_Argentina.svg.webp"> </li> </li>
-                    <li> <img class = "usa-flag" src = "images/1200px-Flag_of_the_United_States.svg.webp">  </li>
-                    <li> <img class = japan-flag src = "images/Flag_of_Japan.svg"> </li>
+                    <li class = "title"> <span>Encriptador de Téxto</span> </li>
+                   <li> <img class = argentina-flag src = "images/arg-flag.png"> </li> </li>
+                   <li> <img class = "usa-flag" src = "images/usa-flag.png"></li>
+                   <li> <img class = japan-flag src = "images/Flag_of_Japan.svg"> </li>
                 </ul>
 
             </nav>
@@ -33,19 +36,25 @@
 
         <main>
 
-            
-            
-            <section class = textbox-and-buttons >
-            <input id = "text-user" class = "send-text" type = "text" required placeholder="Ingrese aquí el téxto a encriptar">
-            <input id = "encrypt-btn" type = "button" value="Encriptar">
-            <input id = "decrypt-btn" type = "button" value ="Desencriptar"> 
-            <button id = "copy-btn" type = "button"> Copiar </button>
+            <div class = "hacking"> <img src = "images/screen.png"></div>
+            <section class = container >
+                
+                <div>
+                    <textarea id="text-user" placeholder="Ingrese aquí el téxto a encriptar..." cols="30" rows="10" onkeyup="soloMinuscula(this)"></textarea>
+                </div>
+                
+                <section class = "buttons" >
+                    <input id = "encrypt-btn" type = "button" value="Encriptar">
+                    <input id = "decrypt-btn" type = "button" value ="Desencriptar"> 
+                    <button id = "copy-btn" type = "button"> Copiar </button>
+                </section>
 
+                <section class = "text-result" >
+                    <input id = text-result type= "text">
+                    
             </section>
-
-            <input id = text-result type= "text" >
-
-
+            
+            </section>
 
         </main>
 
