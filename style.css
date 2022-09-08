@@ -1,0 +1,127 @@
+/* Header content */
+
+    
+
+    .box
+    {
+        width: 940px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    header {
+
+        background-color: rgb(12, 13, 61);
+
+        padding: 65px 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+    nav li
+    {
+        display: inline;
+    }
+    .alura-logo { 
+        position:fixed; 
+        top:0; 
+        right:0; 
+        width: 12%;
+        }
+
+    .title
+    {
+        position: relative;
+        color: white;
+        left: 30%;
+        top: 4.5%;
+        font-size: 300%;
+        
+        
+        
+    }
+
+    .flags
+    {
+        padding: 0 15px;
+    }
+
+    .japan-flag
+    { 
+        position: absolute;
+        top: 50px;
+        right: 180px;
+        width: 60px;
+        border-radius:20px;
+        transition: 0.2s;
+    }
+
+    .japan-flag:hover
+    {
+        scale: 110%;
+        transition: 0.2s;
+        content: counter("Hola");
+    }
+
+    .usa-flag
+    {
+        position: absolute;
+        top: 50px;
+        right: 260px;
+        width: 60px;
+        height: 40px;
+        border-radius:20px;
+        transition: 0.2s;
+
+    }
+
+    .usa-flag:hover
+    {
+        scale: 110%;
+        transition: 0.2s;
+    }
+
+
+    .argentina-flag
+    {
+        position: absolute;
+        top: 50px;
+        right: 340px;
+        width: 60px;
+        border-radius:20px;
+        transition: 0.2s;
+        height: 40px;
+
+    }
+
+    .argentina-flag:hover
+    {
+        scale: 110%;
+        transition: 0.2s;
+    }
+
+    
+    @media screen and (max-width:480px)
+    {
+        .title 
+        {
+            text-align: center;
+            width: auto;
+        }
+
+        .flags
+        {
+            display: block;
+        }
+    }
+
+
+
+/* Main content */
+
+
+
+
+
+
+/* Footer content */
