@@ -36,30 +36,42 @@
 
         <main>
 
-            <div class = "hacking"> <img src = "images/screen.png"></div>
+            <div class = "hacking"> <img src = "images/screen.png">
+                <textarea id="text-result" placeholder=" Aquí recibirás el téxto encriptado. "       cols="30" rows="10" onkeyup="soloMinuscula(this)"></textarea>
+                <button id = "copy-btn" type = "button"> Copiar </button>
+            </div>
             <section class = container >
                 
-                <div>
+                <div class = "user-t">
                     <textarea id="text-user" placeholder="Ingrese aquí el téxto a encriptar..." required cols="30" rows="10" onkeyup="soloMinuscula(this)"></textarea>
+                    <button id = "encrypt-btn" type = "button">Encriptar</button>
+                    <button id = "decrypt-btn" type = "button">Desencriptar</button>
                 </div>
-                
-                <section class = "buttons" >
-                    <input id = "encrypt-btn" type = "button" value="Encriptar">
-                    <input id = "decrypt-btn" type = "button" value ="Desencriptar"> 
-                    <button id = "copy-btn" type = "button"> Copiar </button>
-                </section>
-
-                <section class = "text-result" >
-                <textarea id="text-result" placeholder=" Aquí recibirás el téxto encriptado. " cols="30" rows="10" onkeyup="soloMinuscula(this)"></textarea>
-                
-            </section>
-            
-            </section>
-
         </main>
 
 
         <footer>
+
+            <section class = "footer-links" >
+                <div>
+                    <a  href="https://github.com/GastonArce">
+                        <img  class = "github-logo" src ="images/25231.png">
+
+                    </a>
+
+                    
+                    <a href="https://www.linkedin.com/in/gaston-arce/">
+                        <img class = "lnkdn-logo" src = "images/lnkd.png">
+                    </a>
+
+                    <p class = "gaston">@2022 GastonArce</p>
+
+                </div>
+
+
+
+            </section>
+
 
 
         </footer>
