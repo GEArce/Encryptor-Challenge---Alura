@@ -294,6 +294,13 @@ body
 
 }
 
+.ai
+{
+    color: #8d8d8d;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
 .buttons
 {
     margin-left: 15%;
@@ -368,7 +375,7 @@ body
 {
     position: absolute;
     left: 40%;
-    bottom: 110px;
+    bottom: 32%;
     width: 22%;
     height: 42px;
     background-color: rgb(224, 180, 251);
