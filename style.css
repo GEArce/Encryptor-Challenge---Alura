@@ -129,6 +129,7 @@
         left: 69%;
         top: 8.4%;
         transition: 0.2s;
+        border: 1.5px solid white;
     }
 
     .argentina-flag:hover
@@ -265,27 +266,128 @@ body
 }
 
 
-#texto-user:placeholder
-{
-    color: #f90d83;
-    
-}
+
 
 .hacking
 {
     float: right;
     position: relative;
-    margin: 0 5%;
- 
-
+    margin: 0 5%; 
 }
 
-.text-result
+#text-result
 {
     position: absolute;
-    top: 20%;
-    margin: 0 5%;
+    right: 14%;
+    top: 37%;
+    background-color: #ededed;
+    border: none;
+    resize: none;
+
 }
+
+.buttons
+{
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+#encrypt-btn
+{
+    position: absolute;
+    right: 80%;
+    bottom: 30%;
+    margin: -2% 0;
+    width: 8%;
+    height: 6%;
+    background-color: rgb(224, 180, 251);
+    border-radius: 10%;
+    border: 4px solid rgb(213, 150, 251);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgb(115, 0, 255);
+    transition: 0.1s;
+}
+
+#encrypt-btn:hover
+{
+    border: 5px solid rgb(213, 150, 251);
+    transition: 0.1s;
+    opacity: 85%;
+
+}
+
+#encrypt-btn:active
+{
+    border: 10px solid rgb(213, 150, 251);
+    transition: 0.1s;
+}
+
+
+#decrypt-btn
+{
+    position: absolute;
+    right: 65%;
+    bottom: 30%;
+    margin: -2% 0;
+    width: 8%;
+    height: 6%;
+    background-color: rgb(224, 180, 251);
+    border-radius: 10%;
+    border: 4px solid rgb(213, 150, 251);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgb(115, 0, 255);
+    transition: 0.1s;
+}
+
+#decrypt-btn:hover
+{
+    border: 5px solid rgb(213, 150, 251);
+    transition: 0.1s;
+    opacity: 85%;
+
+}
+
+#decrypt-btn:active
+{
+    border: 10px solid rgb(213, 150, 251);
+    transition: 0.1s;
+}
+
+
+#copy-btn
+{
+    position: absolute;
+    right: 16.5%;
+    top: 54%;
+    width: 8%;
+    height: 6%;
+    background-color: rgb(224, 180, 251);
+    border-radius: 10%;
+    border: 4px solid rgb(213, 150, 251);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgb(115, 0, 255);
+    transition: 0.1s;
+}
+
+#copy-btn:hover
+{
+    border: 5px solid rgb(213, 150, 251);
+    transition: 0.1s;
+    opacity: 85%;
+
+}
+
+#copy-btn:active
+{
+    border: 10px solid rgb(213, 150, 251);
+    transition: 0.1s;
+}
+
+
+
 
 /* Footer content */
 
